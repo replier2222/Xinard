@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=XND
+Comment=XND P2P Cryptocurrency
+Exec=xinard-qt %u
+Terminal=false
+Type=Application
+Icon=xinard128
+MimeType=x-scheme-handler/xinard;
+Categories=Office;Finance;
+Name[en_US]=xinard-qt.desktop

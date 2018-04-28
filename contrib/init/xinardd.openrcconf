@@ -1,0 +1,26 @@
+# /etc/conf.d/xinardd: config file for /etc/init.d/xinardd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/xinard/xinard.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/xinardd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/xinardd.pid"
+
+# Where to write xinardd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/xinardd"
+
+# User and group to own xinardd process
+#BITCOIND_USER="xinard"
+#BITCOIND_GROUP="xinard"
+
+# Path to xinardd executable
+#BITCOIND_BIN="/usr/bin/xinardd"
+
+# Nice value to run xinardd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
