@@ -246,7 +246,13 @@ public:
 
         // Stake Settings
         nHashDrift = 45;
-        nStakeSplitThreshold = 30;
+
+        /*
+         * nStakeSplitThreshold Needs to be higher than the highest value returned from GetBlockValue.
+         * otherwise you will end up with negative vOut nValues in PoS blocks -> your PoS blocks will be rejected.
+         */
+        nStakeSplitThreshold = 1000;
+
         nHashInterval = 22;
         nStakeSetUpdateTime = 300; // 5 minutes
 
